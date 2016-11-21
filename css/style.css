@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1280px;
+    height: 1208px;
+    margin: 0 auto;
+}
+
+/*HEAD*/
+header {
+    width: 1280px;
+    height: 323px;
+    background: rgb(68, 81, 98);
+}
+.product-info {
+    width: 502px;
+    height: 250px;
+    margin-top: 40px;
+    margin-left: 50px;
+    float: left;
+}
+.product-info h1 {
+    margin-bottom: 41px; 
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.product-info ul {
+    list-style: none;
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);  
+}
+.product-info ul li {
+    background: url(../images/check-icon.png) 0px 5px no-repeat;
+    padding-left: 40px;
+}
+header .logo {
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+    width: 469px;
+    height: 214px;
+    background: #ffffff url("../images/logo.png") 0 50% no-repeat;
+}
+
+
+header button {
+    width: 100px;
+    height: 50px;
+    margin-top: 273px;
+    border-radius: 20%;
+}
+
+
+/*MAIN, PRODUCT*/
+
+.about_product {
+    width: 1280px;
+    height: 344px;
+    background-color: rgb(255, 255, 255);
+}
+.about_product .history {
+    float: left;
+    height: 215px;
+    width: 655px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.about_product .history h2 {
+    font-family: Arial;
+    color:  #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.about_product .history p {
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;  
+    margin-bottom: 10px;
+}
+
+.about_product .foto {
+    width: 430px;
+    height: 245px;
+    background: url("../images/Geek-Week-Logo.png") 50% 50% no-repeat;
+    background-color: #445161;
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+
+/*MAIN, CONTACTS*/
+/*LEFT side*/
+.contacts {
+    width: 1280px;
+    height: 509px;
+    background-color: rgb(68, 81, 98);
+}
+
+.contacts .my-form {
+    width: 500px;
+    height: 400px;
+    margin-left: 249px;
+    float: left;
+    
+}
+.contacts .my-form input[type="text"],
+.contacts .my-form input[type="email"],
+.contacts .my-form textarea {
+    margin-bottom: 21px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    border: none;
+    
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.contacts .my-form input {
+    width: 500px;
+    height: 30px;
+}
+.contacts .my-form textarea {
+    width: 500px;
+    height: 170px;
+    resize: none;
+}
+.contacts .my-form input[type="submit"] {
+    width: 140px;
+    height: 40px;
+    background-color: #ffffff;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 200px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 5px 0 #006599;
+    cursor: pointer;
+    transition: .1s linear;
+}
+.my-form input[type="submit"]:active {
+    box-shadow: 0 2px 0 #006599;
+    transform: translateY(3px);
+}
+.contacts h2 {
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/*MAIN, CONTACTS*/
+/*RIGHT side*/
+
+.contacts .social {
+    float: right;
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    margin-right: 280px;
+    margin-bottom: 30px;
+}
+
+.contacts .social p {
+    position: relative;
+    padding-left: 20px;
+}
+.contacts .social span {
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    left: -10px;
+    bottom: 10px;
+}
+
+.social p:hover {
+    animation: new 2s infinite;
+
+}
+@keyframes new {
+    0%, 100% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(20px);
+    }
+}
+.contacts .social span.skype {
+    background: url(../images/skype-icon.png) no-repeat;
+}
+.contacts .social span.icq {
+    background: url(../images/icq-icon.png) no-repeat;
+}
+.contacts .social span.mail-info {
+    background: url(../images/email-icon.png) no-repeat;
+}
+.contacts .social span.phone {
+    background: url(../images/phone-icon.png) no-repeat;
+}
+/*MAIN, CONTACTS*/
+/*RIGHT side*/
+/*SHARE*/
+.contacts .share {
+    float: right;
+    width: 240px;
+    height: 42px;
+    margin-right: 235px;
+    color: rgb(68, 81, 98);
+    text-align: center;
+    line-height: 44px;
+    font-size: 21px;
+}
+
+.tw,
+.fb,
+.in,
+.goog,
+.utub {
+    height: 42px;
+    width: 42px;
+    float: left;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 5px;
+    transition: 1s;
+}
+.tw:hover,
+.fb:hover,
+.in:hover,
+.goog:hover,
+.utub:hover {
+    transform: rotate(360deg);
+}
+.share a:link,
+.share a:visited,
+.share a:active {
+    text-decoration: none;
+    color:rgb(68, 81, 98);;
+}
+
+footer {
+    background-color:rgb(245, 245, 245);
+    font-family: Arial;
+    color:  #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    text-align: center;
+}
+
