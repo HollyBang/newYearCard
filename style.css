@@ -1,0 +1,222 @@
+@keyframes changeColor {
+  25% {
+    color: red;
+  }
+  60% {
+    color: green;
+  }
+  
+}
+
+body, html {
+  height: 100%;
+}
+.snowflake {
+  position: fixed;
+  top: -10%;
+  background: url(snowflake_m.png);
+  width: 32px;
+  height: 33px;
+  transition: 20s all ease-in-out;
+}
+
+#snowflakes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#wrapper {
+  background: #217f99 url(http://img05.deviantart.net/df20/i/2008/343/4/3/christmas_background_by_missiet.jpg) bottom left no-repeat;
+  background-size: 70%;
+  position: relative;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#audio-controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 3;
+}
+#audio-controls a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  padding-top: 50%;
+}
+
+h1 {
+  animation-name: changeColor;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-top: -25%;
+  text-shadow: 0 0 10px #fff;
+  padding: 0 15px;
+}
+
+h1:hover {
+  text-shadow: 0 0 10px rgba(174, 174, 20, 0.6);
+}
+.poem{
+  padding: 0 20px;
+}
+.poem-inner {
+  max-width: 400px;
+  margin: 50px auto 0 auto;
+  font-size: 20px;
+  line-height: 30px;
+  color: #e1dfdf;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  
+}
+
+.poem-inner p{
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+small {
+  display: block;
+  font-size: 20px;
+}
+
+.pattya {
+  font-family: 'Pattaya', sans-serif;
+}
+
+#snowman {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-height: 780px) {
+  #wrapper {
+    padding-bottom: 100px;
+  }
+  #snowman {
+    position: absolute;
+  }
+}
+.hidden{
+  display: none;
+}
+#snowman1 { 
+  position: absolute;
+  left: 50%;
+  bottom: -50%;
+  animation: posSnowman 15s ease-in-out infinite;
+}
+@keyframes posSnowman {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+}
+
+#snowman1 .inner {
+  position: relative;
+  display: inline-block;
+}
+
+#snowman1 .base{
+  position: relative;
+  z-index: 2;
+}
+
+#snowman1 .hand {
+  position: absolute;
+  z-index: 1;
+  right: -4%;
+  top: 40%;
+  -webkit-transform-origin: 0 100%;
+
+  animation: snowman1-hand 1s ease-in-out infinite;
+  -webkit-animation: snowman1-hand 1s ease-in-out infinite;
+  -ms-animation: snowman1-hand 1s ease-in-out infinite;
+  -moz-animation: snowman1-hand 1s ease-in-out infinite;
+}
+@keyframes snowman1-hand {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@-webkit-keyframes snowman1-hand {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@-ms-keyframes snowman1-hand {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 400px 400px, 200px 300px;
+  }
+}
+
+@-moz-keyframes snowman1-hand {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 400px 400px, 200px 300px;
+  }
+}
+
+@-o-keyframes snowman1-hand {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 400px 400px, 200px 300px;
+  }
+}
+@media (max-width: 768px){
+  #text {
+    position: static;
+    width: 100%;
+  }
+  #snowman1 {
+    position: relative;
+    margin: 20px auto 0 auto;
+  }
+
+  #snowman1 {
+    text-align: center;
+  }
+}

@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>GeekWeek</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<header>
-			<div class="product-info">
-				<h1>Product name</h1>
-				<ul>
-					<li>Put on this page information about your product</li>
-					<li>A detailed description of your product</li>
-					<li>Tell us about the advantages and merits</li>
-					<li>Associate the page with the payment system</li>
-				</ul>
+  <div id="wrapper">
+    <div id="audio-controls">
+      <a id="audio-play" class="hidden fa fa-play" href='#'></a>
+      <a id="audio-pause" class="fa fa-pause" href='#'></a>
+      <audio src="audio.mp3" id="song" autoplay></audio>
+    </div>
+    <div id="snowflakes" data-count="10"></div>
+    <div class="pattya title">
+      <h1>
+        Товарищи, йо хо хо!
+        <small>
+          поздравляю с наступающим Новым Годом!
+        </small>
+      </h1>
+      <div class="poem">
+        <div class="poem-inner">
+          Снеговик письмо шлет другу:
+          «Я тебе желаю вьюгу…
+          Чтоб метель весь год мела…
+          Льда, сугробов, снежных горок
+          И морозов «минус сорок»…
+          И душевного тепла!»
+        </div>
+      </div>
+    </div>
 
-			</div>
-			<div class="logo"></div>
-		</header>
-		<section class="about_product">
-			<div class="history">
-				<h2>About your product</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-				<p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde per&shy;ferendis nemo debitis dolor.</p>
-			</div>
-			<div class="foto"></div>
-		</section>
-		<section class="contacts">
-			<h2>Contacts</h2>
-			<div class="my-form">
-				<form action="#">
-					<input type="text" name="name" placeholder="Your name:">
-					<br>
-					<input type="email" name="email" placeholder="Your email:">
-					<br>
-					<textarea name="message" id="" cols="50" rows="10" placeholder="Your message:"></textarea>
-					<input type="submit" value="SEND">
-
-				</form>
-			</div>
-			<div class="social">
-				<p><span class="skype"></span>here_your_login_skype</p>
-				<p><span class="icq"></span>279679659</p>
-				<p><span class="mail-info"></span>psdhtmlcss@mail.ru</p>
-				<p><span class="phone"></span>80 00 4568 55 55</p>
-			</div>
-			<div class="share">
-				<a href=""><div class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></div></a>
-				<a href=""><div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
-				<a href=""><div class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a>
-				<a href=""><div class="goog"><i class="fa fa-google-plus" aria-hidden="true"></i></div></a>
-				<a href=""><div class="utub"><i class="fa fa-youtube" aria-hidden="true"></i></div></a>            
-			</div>
-		</section>
-		<footer>Copyright &copy; 2014 Product name - PSD HTML CSS</footer>
-	</div>
+    <img id="snowman" src="snowman.png">
+    <div id="snowman1">
+      <div class="inner">
+        <img src="snowman1.png" alt="" class="base">
+        <img src="snowman1-hand.png" alt="" class="hand">
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script type="text/javascript" src="card.js"></script>
 </body>
 </html>
